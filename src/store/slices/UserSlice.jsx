@@ -16,6 +16,12 @@ const users = createSlice({
       return (state = []);
     },
   },
+
+  extraReducers(builder) {
+    builder.addCase(users.actions.deleteUser, () => {
+      return [];
+    });
+  },
 });
 
 export default users.reducer;
