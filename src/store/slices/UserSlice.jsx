@@ -12,7 +12,8 @@ const users = createSlice({
       state.splice(action.payload, 1);
     },
     deleteUser(state, action) {
-      state.splice(action.payload);
+      // state.splice(action.payload);
+      return (state = []);
     },
   },
 });
